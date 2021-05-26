@@ -16,4 +16,4 @@ jobs:
           persist-credentials: false
           path: ./
       - uses: ./
-      - name: Last step
+        name: My private repo
