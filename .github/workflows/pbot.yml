@@ -17,3 +17,5 @@ jobs:
           path: ./
       - uses: ./
         name: My private repo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
