@@ -1,6 +1,7 @@
 name: My workflow
 on: 
   pull_request:
+  push:
 jobs:
   do-something:
     runs-on: ubuntu-latest
