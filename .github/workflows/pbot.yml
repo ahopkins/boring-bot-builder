@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # - uses: actions/checkout@v2
-      - name: Checkout my-organization/awesome-action
+      - name: Checkout ahopkins/pbot
         uses: actions/checkout@v2
         with:
           repository: ahopkins/pbot
           ref: refs/heads/main
           # GitHub's personal access token with access to `my-organization/awesome-action`
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.AHOPKINS_PAT }}
           persist-credentials: false
           path: ./
       - uses: ./
