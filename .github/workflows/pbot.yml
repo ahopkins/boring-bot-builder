@@ -1,7 +1,6 @@
 name: My workflow
 on:
   pull_request:
-  push:
 jobs:
   do-something:
     runs-on: ubuntu-latest
@@ -18,3 +17,5 @@ jobs:
           path: ./
       - uses: ./
         name: My private repo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
